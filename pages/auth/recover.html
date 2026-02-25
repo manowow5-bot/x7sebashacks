@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recuperar contraseña | Store de x7sebaspanel</title>
+  <link rel="stylesheet" href="../../css/styles.css" />
+</head>
+<body data-page="recover">
+  <main class="auth-wrapper">
+    <section class="auth-card cyber-card">
+      <p class="brand-mini">STORE X7SEBASPANEL</p>
+      <h1>Recuperar contraseña</h1>
+      <p class="subtitle">Recibe un código de verificación por WhatsApp</p>
+
+      <form id="sendCodeForm" class="form">
+        <label for="recoverEmail">Correo registrado</label>
+        <input id="recoverEmail" name="recoverEmail" type="email" placeholder="correo@ejemplo.com" required />
+
+        <label for="phone">Número WhatsApp</label>
+        <input id="phone" name="phone" type="tel" value="+52 962 140 6226" required />
+        <button type="submit">Enviar código por WhatsApp</button>
+      </form>
+
+      <form id="resetForm" class="form">
+        <label for="otp">Código</label>
+        <input id="otp" name="otp" type="text" placeholder="6 dígitos" maxlength="6" required />
+
+        <label for="newPassword">Nueva contraseña</label>
+        <input id="newPassword" name="newPassword" type="password" placeholder="Nueva contraseña" required />
+
+        <label for="confirmPassword">Confirmar contraseña</label>
+        <input id="confirmPassword" name="confirmPassword" type="password" placeholder="Repite contraseña" required />
+
+        <button type="submit">Actualizar contraseña</button>
+      </form>
+
+      <a class="link" href="./login.html">Volver al login</a>
+      <p id="recoverMessage" class="message"></p>
+    </section>
+  </main>
+
+  <script src="../../js/app.js"></script>
+</body>
+</html>

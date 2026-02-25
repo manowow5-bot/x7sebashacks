@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Store de x7sebaspanel</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body data-page="dashboard">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <h1>Store de x7sebaspanel</h1>
+      <p class="brand-mini">CYBER STORE</p>
+      <nav>
+        <a class="active" href="./index.html">Inicio</a>
+        <a href="./pages/profile/edit-profile.html">Editar perfil</a>
+        <a href="./pages/profile/my-keys.html">Mis keys compradas</a>
+        <a href="./pages/profile/global-chat.html">Chat global</a>
+        <a href="#" id="logoutBtn">Cerrar sesión</a>
+      </nav>
+      <div class="tutorial-box">
+        <p>Tutoriales</p>
+        <a class="tutorial-btn" href="https://docs.google.com/document/d/1MOv6i3FMKoZhbHTseCXnpIXOlSwz1-6x-K085ijZQrc/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Abrir tutorial</a>
+      </div>
+      <p class="support">Soporte WhatsApp:<br><a href="https://wa.me/529621406226" target="_blank" rel="noopener noreferrer">+52 962 140 6226</a></p>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <h2>Panel principal</h2>
+        <span id="welcomeName">Bienvenido</span>
+      </header>
+
+      <section class="hero card">
+        <p class="eyebrow">STORE DE X7SEBASPANEL</p>
+        <h3>Acceso privado con verificación por WhatsApp</h3>
+        <p>Panel seguro para iniciar sesión, recuperar contraseña por código y editar tu perfil en segundos.</p>
+        <div class="stats">
+          <span class="chip">Login seguro</span>
+          <span class="chip">OTP WhatsApp</span>
+          <span class="chip">Perfil editable</span>
+        </div>
+      </section>
+
+      <section class="cards">
+        <article class="card">
+          <h3>Billetera</h3>
+          <p>Saldo disponible:</p>
+          <p id="availableBalance">$0.00</p>
+        </article>
+        <article id="generateCodeCard" class="card">
+          <h3>Generar código de canje</h3>
+          <form id="generateCodeForm" class="form">
+            <label for="codeAmount">Monto del código</label>
+            <input id="codeAmount" name="codeAmount" type="number" min="1" step="1" placeholder="Ej: 200" required />
+            <button type="submit">Generar código</button>
+          </form>
+          <p id="generatedCodeMessage" class="message"></p>
+          <ul id="myCodesList" class="code-list">
+            <li>No tienes códigos pendientes.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Canjear dinero por código</h3>
+          <form id="redeemCodeForm" class="form">
+            <label for="redeemCode">Código generado</label>
+            <input id="redeemCode" name="redeemCode" type="text" placeholder="Ej: X7-ABC123-456" required />
+            <button type="submit">Canjear código</button>
+          </form>
+          <p id="redeemCodeMessage" class="message"></p>
+        </article>
+        <article class="card product-card">
+          <h3>x7sebaspanel para pc</h3>
+          <p>Duración: 1 día</p>
+          <p>Precio: $0.5</p>
+          <p>Keys disponibles: <strong><span class="stock-value" data-plan="1d">0</span></strong></p>
+          <iframe class="product-video" src="https://www.youtube-nocookie.com/embed/QVs0WPXebUU?rel=0" title="Video x7sebaspanel para pc" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <button type="button" class="buy-product-btn" data-product="x7sebaspanel para pc" data-duration="1 día" data-price="$0.5" data-plan="1d" data-message-id="purchaseMessage1">Comprar</button>
+          <p id="purchaseMessage1" class="message"></p>
+        </article>
+        <article class="card product-card">
+          <h3>x7sebaspanel para pc</h3>
+          <p>Duración: 7 días</p>
+          <p>Precio: $5</p>
+          <p>Keys disponibles: <strong><span class="stock-value" data-plan="7d">0</span></strong></p>
+          <iframe class="product-video" src="https://www.youtube-nocookie.com/embed/QVs0WPXebUU?rel=0" title="Video x7sebaspanel para pc" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <button type="button" class="buy-product-btn" data-product="x7sebaspanel para pc" data-duration="7 días" data-price="$5" data-plan="7d" data-message-id="purchaseMessage2">Comprar</button>
+          <p id="purchaseMessage2" class="message"></p>
+        </article>
+        <article class="card product-card">
+          <h3>x7sebaspanel para pc</h3>
+          <p>Duración: 15 días</p>
+          <p>Precio: $10</p>
+          <p>Keys disponibles: <strong><span class="stock-value" data-plan="15d">0</span></strong></p>
+          <iframe class="product-video" src="https://www.youtube-nocookie.com/embed/QVs0WPXebUU?rel=0" title="Video x7sebaspanel para pc" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <button type="button" class="buy-product-btn" data-product="x7sebaspanel para pc" data-duration="15 días" data-price="$10" data-plan="15d" data-message-id="purchaseMessage3">Comprar</button>
+          <p id="purchaseMessage3" class="message"></p>
+        </article>
+        <article class="card product-card">
+          <h3>x7sebaspanel para pc</h3>
+          <p>Duración: 30 días</p>
+          <p>Precio: $17</p>
+          <p>Keys disponibles: <strong><span class="stock-value" data-plan="30d">0</span></strong></p>
+          <iframe class="product-video" src="https://www.youtube-nocookie.com/embed/QVs0WPXebUU?rel=0" title="Video x7sebaspanel para pc" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <button type="button" class="buy-product-btn" data-product="x7sebaspanel para pc" data-duration="30 días" data-price="$17" data-plan="30d" data-message-id="purchaseMessage4">Comprar</button>
+          <p id="purchaseMessage4" class="message"></p>
+        </article>
+        <article class="card product-card">
+          <h3>x7sebaspanel para pc</h3>
+          <p>Duración: Permanente</p>
+          <p>Precio: $30</p>
+          <p>Keys disponibles: <strong><span class="stock-value" data-plan="perm">0</span></strong></p>
+          <iframe class="product-video" src="https://www.youtube-nocookie.com/embed/QVs0WPXebUU?rel=0" title="Video x7sebaspanel para pc" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <button type="button" class="buy-product-btn" data-product="x7sebaspanel para pc" data-duration="Permanente" data-price="$30" data-plan="perm" data-message-id="purchaseMessage5">Comprar</button>
+          <p id="purchaseMessage5" class="message"></p>
+        </article>
+        <article id="adminKeysCard" class="card">
+          <h3>Admin: cargar keys</h3>
+          <form id="adminKeysForm" class="form">
+            <label for="adminPlan">Plan</label>
+            <select id="adminPlan" name="adminPlan" required>
+              <option value="1d">1 día</option>
+              <option value="7d">7 días</option>
+              <option value="15d">15 días</option>
+              <option value="30d">30 días</option>
+              <option value="perm">Permanente</option>
+            </select>
+            <label for="adminKeysInput">Keys (una por línea)</label>
+            <textarea id="adminKeysInput" name="adminKeysInput" rows="5" placeholder="KEY-AAAAA&#10;KEY-BBBBB" required></textarea>
+            <button type="submit">Guardar keys</button>
+          </form>
+          <p id="adminKeysMessage" class="message"></p>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>

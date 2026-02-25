@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Store de x7sebaspanel</title>
+  <link rel="stylesheet" href="../../css/styles.css" />
+</head>
+<body data-page="login">
+  <main class="auth-wrapper">
+    <section class="auth-card cyber-card">
+      <p class="brand-mini">🚀 <span>x7sebaspanel</span></p>
+      <h1>Iniciar Sesión</h1>
+      <p class="subtitle">Accede a tu cuenta para continuar</p>
+
+      <form id="loginForm" class="form">
+        <label for="email">USUARIO</label>
+        <input id="email" name="email" type="email" placeholder="usuario@correo.com" required />
+
+        <label for="password">CONTRASEÑA</label>
+        <input id="password" name="password" type="password" placeholder="Ingresa tu contraseña" required />
+
+        <button type="submit">🔐 INICIAR SESIÓN</button>
+      </form>
+
+      <div class="auth-links">
+        <a class="link" href="./register.html">¿No tienes cuenta? Regístrate aquí</a>
+        <a class="link" href="./recover.html">¿Olvidaste tu contraseña?</a>
+      </div>
+
+      <p class="divider">O continúa con</p>
+      <div class="social-grid">
+        <a class="social-link" href="https://wa.me/523333055098" target="_blank" rel="noopener noreferrer">📱 WhatsApp</a>
+      </div>
+      <p id="loginMessage" class="message"></p>
+    </section>
+  </main>
+
+  <script src="../../js/app.js"></script>
+</body>
+</html>
